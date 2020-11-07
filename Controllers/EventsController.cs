@@ -10,7 +10,8 @@ namespace HelloASPDotNET.Controllers
 {
     public class EventsController : Controller
     {
-        static private List<string> Events = new List<string>();
+        //static private List<string> Events = new List<string>();
+        static private Dictionary<string, string> Events = new Dictionary<string, string>();
         // GET: /<controller>/
         [HttpGet]
         public IActionResult Index()
@@ -29,9 +30,9 @@ namespace HelloASPDotNET.Controllers
 
         [HttpPost]
         [Route("/Events/Add")]
-        public IActionResult NewEvent(String name)
+        public IActionResult NewEvent(String name ,string description="")
         {
-            Events.Add(name);
+            Events.Add(name,description);
             return Redirect("/Events"); 
         }
     }

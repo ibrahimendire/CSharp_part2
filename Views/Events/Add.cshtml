@@ -1,11 +1,13 @@
-﻿<h1>Add Events</h1>
+﻿<h1>Add Event</h1>
 
-<form method = "post">
-    <input  name="name" type ="text"/>
-    <select>
-        <option name=""> Please select Language</option>
-        <option id="Eng" name="english">English</option>
-        <option id="Arb" name="arabic">Arabic</option>
-    </select>
-    <input type ="submit" value="Add Event"/>
+<form method="post">
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input name="name" type="text" />
+    </div>
+    <div class="form-group">
+        <label for="description">Description</label>
+        <input name="description" />
+    </div>
+    <input type="submit" value="Add Event" />
 </form>

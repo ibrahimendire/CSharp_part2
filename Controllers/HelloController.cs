@@ -8,24 +8,19 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace HelloASPDotNET.Controllers
 {
-    [Route("/helloworld/")]  //replace all   commented DRY
+    [Route("/helloworld/")]  
     public class HelloController : Controller
     {
         // GET: /<controller>/
         [HttpGet]
-        //[Route("/helloworld/")] //DRY
         public IActionResult Index()
         {
-            //string html = "<h1>Hello World!</h1>";
 
             return View();
         }
-        //GET /hello/welcome
-        //[HttpGet]
-        //[Route("/helloworld/welCome/{name?}")]
+     
         [HttpGet("wel-Come/{name?}")]
         [HttpPost]
-        //[Route("/helloworld/")]    //DRY
         public IActionResult Welcome(string name="World")
         {
             ViewBag.person = name;
