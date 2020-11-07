@@ -1,0 +1,12 @@
+﻿@page
+@{
+}
+
+@if (ViewBag.person == null || ViewBag.person == "")
+{
+    <h1>WelCome World!</h1>
+}
+else
+{
+    <h1>WelCome @ViewBag.person!</h1>
+}
