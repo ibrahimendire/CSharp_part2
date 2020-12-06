@@ -38,3 +38,4 @@
 /Users/mymac/Desktop/C#2 /Practice/HelloASPDotNET/obj/Debug/netcoreapp3.1/Razor/Views/Events/Index.cshtml.g.cs
 /Users/mymac/Desktop/C#2 /Practice/HelloASPDotNET/obj/Debug/netcoreapp3.1/Razor/Views/Events/Add.cshtml.g.cs
 /Users/mymac/Desktop/C#2 /Practice/HelloASPDotNET/obj/Debug/netcoreapp3.1/scopedcss/bundle/HelloASPDotNET.styles.css
+/Users/mymac/Desktop/C#2 /Practice/HelloASPDotNET/obj/Debug/netcoreapp3.1/Razor/Views/Events/Delete.cshtml.g.cs

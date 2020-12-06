@@ -22,17 +22,21 @@ else
                 Description
             </th>
             <th>
-                Event setup Date
+                Event Date
+            </th>
+            <th>
+                Edit
             </th>
         </tr>
         @foreach (var even in ViewBag.events)
         {
-            <tr>
-                <td>@even.Id</td>
-                <td>@even.Name</td>
-                <td>@even.Description</td>
-                <td>@even.Date</td>
-            </tr>
+    <tr>
+        <td>@even.Id</td>
+        <td>@even.Name</td>
+        <td>@even.Description</td>
+        <td>@even.TimeOfEvent</td>
+        <td><a asp-controller="Events" asp-action="Delete">Delete Event</a> </td>
+</tr>
         }
     </table>
 }

@@ -5,19 +5,22 @@ namespace HelloASPDotNET.Models
     {
         public string Name { get; set; }
         public string Description { get; set; }
-        public DateTime Date { get; }
+        public string TimeOfEvent { get; set;}
         public int Id { get; }
         static private int nextId = 1;
 
-        public Event(string name ,string desc)
+        public Event()
         {
-            Name = name;
-            Description = desc;
-            Date = DateTime.Now;
             Id = nextId;
             nextId++;
         }
 
+        public Event(string name ,string desc ,string date) :this()
+        {
+            Name = name;
+            Description = desc;
+            TimeOfEvent = date;
+        }
 
 
         public override string ToString()
@@ -35,6 +38,7 @@ namespace HelloASPDotNET.Models
         {
             return HashCode.Combine(Id);
         }
+
     }
 }
 
