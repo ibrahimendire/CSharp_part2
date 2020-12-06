@@ -12,20 +12,26 @@ else
 {
     <table class="table">
         <tr>
-           
+            <th>
+                ID
+            </th>
             <th>
                 Name
             </th>
             <th>
                 Description
             </th>
+            <th>
+                Event setup Date
+            </th>
         </tr>
         @foreach (var even in ViewBag.events)
         {
             <tr>
-                <td>@even.Key</td>
-                <td>@even.Value</td>
-              
+                <td>@even.Id</td>
+                <td>@even.Name</td>
+                <td>@even.Description</td>
+                <td>@even.Date</td>
             </tr>
         }
     </table>

@@ -1,6 +1,5 @@
 /Users/mymac/Desktop/C#2 /Practice/HelloASPDotNET/bin/Debug/netcoreapp3.1/appsettings.Development.json
 /Users/mymac/Desktop/C#2 /Practice/HelloASPDotNET/bin/Debug/netcoreapp3.1/appsettings.json
-/Users/mymac/Desktop/C#2 /Practice/HelloASPDotNET/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
 /Users/mymac/Desktop/C#2 /Practice/HelloASPDotNET/bin/Debug/netcoreapp3.1/HelloASPDotNET.deps.json
 /Users/mymac/Desktop/C#2 /Practice/HelloASPDotNET/bin/Debug/netcoreapp3.1/HelloASPDotNET.runtimeconfig.json
 /Users/mymac/Desktop/C#2 /Practice/HelloASPDotNET/bin/Debug/netcoreapp3.1/HelloASPDotNET.runtimeconfig.dev.json
@@ -38,3 +37,4 @@
 /Users/mymac/Desktop/C#2 /Practice/HelloASPDotNET/obj/Debug/netcoreapp3.1/Razor/Views/Hello/Welcome.cshtml.g.cs
 /Users/mymac/Desktop/C#2 /Practice/HelloASPDotNET/obj/Debug/netcoreapp3.1/Razor/Views/Events/Index.cshtml.g.cs
 /Users/mymac/Desktop/C#2 /Practice/HelloASPDotNET/obj/Debug/netcoreapp3.1/Razor/Views/Events/Add.cshtml.g.cs
+/Users/mymac/Desktop/C#2 /Practice/HelloASPDotNET/obj/Debug/netcoreapp3.1/scopedcss/bundle/HelloASPDotNET.styles.css
