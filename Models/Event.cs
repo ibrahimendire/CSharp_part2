@@ -6,6 +6,7 @@ namespace HelloASPDotNET.Models
         public string Name { get; set; }
         public string Description { get; set; }
         public string TimeOfEvent { get; set;}
+        public string ContactEmail { get; set; }
         public int Id { get; }
         static private int nextId = 1;
 
@@ -15,11 +16,12 @@ namespace HelloASPDotNET.Models
             nextId++;
         }
 
-        public Event(string name ,string desc ,string date) :this()
+        public Event(string name ,string desc ,string date ,string contactEmail) :this()
         {
             Name = name;
             Description = desc;
             TimeOfEvent = date;
+            ContactEmail = contactEmail;
         }
 
 

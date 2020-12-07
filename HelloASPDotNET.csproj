@@ -8,5 +8,6 @@
     <Folder Include="Views\Hello\" />
     <Folder Include="Views\Events\" />
     <Folder Include="Data\" />
+    <Folder Include="ViewModels\" />
   </ItemGroup>
 </Project>

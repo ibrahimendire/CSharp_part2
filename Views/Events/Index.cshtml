@@ -1,10 +1,14 @@
-﻿<h1>Coding Events</h1>
+﻿@using HelloASPDotNET.Models
+
+@model List<Event>
+@*@model List<HelloASPDotNET.Models.Event>*@   <!--or this ,the same as  above line 1 to 3-->
+<h1>Coding Events</h1>
 
 <p>
     <a asp-controller="Events" asp-action="Add">Add Event</a>
 </p>
 
-@if (ViewBag.events.Count == 0)
+@if (Model.Count == 0)
 {
     <p>No events yet!</p>
 }
@@ -25,18 +29,24 @@ else
                 Event Date
             </th>
             <th>
+                Contact Email
+            </th>
+            <th>
                 Edit
             </th>
+
+
         </tr>
-        @foreach (var even in ViewBag.events)
+        @foreach (var even in Model)
         {
-    <tr>
-        <td>@even.Id</td>
-        <td>@even.Name</td>
-        <td>@even.Description</td>
-        <td>@even.TimeOfEvent</td>
-        <td><a asp-controller="Events" asp-action="Delete">Delete Event</a> </td>
-</tr>
+            <tr>
+                <td>@even.Id</td>
+                <td>@even.Name</td>
+                <td>@even.Description</td>
+                <td>@even.TimeOfEvent</td>
+                <td>@even.ContactEmail</td>
+                <td><a asp-controller="Events" asp-action="Delete">Delete Event</a> </td>
+            </tr>
         }
     </table>
 }
